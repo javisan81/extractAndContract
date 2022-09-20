@@ -1,6 +1,5 @@
 The goal of this practice is to Refactor the class Grid.
 We have realised that x,y params in all the methods can be replaced by a data clump, let's call it Coordinate.
-So we went to make this refactor.
 
 Rules:
 - The tests in GridTest cannot be changed until we are sure our code behaves the same than before.
