@@ -7,15 +7,15 @@ public class Grid {
         cells = new Cell[width][length];
     }
 
-    public void addCell(int x, int y, Cell cell) {
-        cells[x][y] = cell;
+    public void addCell(Coordinate coordinate, Cell cell) {
+        cells[coordinate.getX()][coordinate.getY()] = cell;
     }
 
-    public Cell fetchCell(int x, int y) {
-        return cells[x][y];
+    public Cell fetchCell(Coordinate coordinate) {
+        return cells[coordinate.getX()][coordinate.getY()];
     }
 
-    public boolean isEmpty(int x, int y) {
-        return cells[x][y] == null;
+    public boolean isEmpty(Coordinate coordinate) {
+        return cells[coordinate.getX()][coordinate.getY()] == null;
     }
 }

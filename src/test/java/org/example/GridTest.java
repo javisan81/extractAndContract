@@ -10,15 +10,15 @@ public class GridTest {
     public void client1(){
         Grid grid=new Grid(5,5);
         Cell cellToAdd = new Cell();
-        grid.addCell(1,1, cellToAdd);
-        assertEquals(cellToAdd, grid.fetchCell(1,1));
+        grid.addCell(new Coordinate(1, 1), cellToAdd);
+        assertEquals(cellToAdd, grid.fetchCell(new Coordinate(1, 1)));
     }
 
     @Test
     public void client2(){
         Grid grid=new Grid(5,5);
         Cell cellToAdd = new Cell();
-        grid.addCell(1,1, cellToAdd);
-        assertFalse(grid.isEmpty(1,1));
+        grid.addCell(new Coordinate(1, 1), cellToAdd);
+        assertFalse(grid.isEmpty(new Coordinate(1, 1)));
     }
 }
